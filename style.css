@@ -36,25 +36,27 @@ body {
   transform: scale(0.9);
 }
 
-/* Container for the message */
+/* General styles for the message container */
 .message-container {
-  position: fixed; /* Fixed position ensures it stays visible while scrolling */
-  bottom: 0; /* Aligns the container to the bottom of the viewport */
-  left: 0; /* Aligns the container to the left edge of the viewport */
-  width: 100%; /* Full width to span across the viewport */
-  background-color: #d65b76; /* Background color for contrast */
-  padding: 10px; /* Padding for some space around the message */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-  text-align: center; /* Centers the text */
-  z-index: 10; /* Ensures it stays above other elements */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(233, 23, 111, 0.8); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure the message is above other content */
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
 }
 
-/* Optional styling for the message text */
 .message-container p {
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  font-size: 26px; /* Adjust font size as needed */
   color: #333; /* Text color */
-  font-size: 16px; /* Font size */
 }
+
 
 
 
